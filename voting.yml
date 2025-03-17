@@ -1,78 +1,55 @@
-title: "Online Voting System"
+# project.yml
 
-pages:
-  home:
-    title: "Welcome to the Online Voting System"
-  login:
-    title: "Login"
-    form:
-      username:
-        label: "Username:"
-        placeholder: "Enter your username"
-        required: true
-      password:
-        label: "Password:"
-        placeholder: "Enter your password"
-        required: true
-  adminLogin:
-    title: "Admin Login"
-    form:
-      adminUsername:
-        label: "Username:"
-        placeholder: "Enter admin username"
-        required: true
-      adminPassword:
-        label: "Password:"
-        placeholder: "Enter admin password"
-        required: true
-  register:
-    title: "Register"
-    form:
-      regUsername:
-        label: "Username:"
-        placeholder: "Choose a username"
-        required: true
-      regPassword:
-        label: "Password:"
-        placeholder: "Choose a password"
-        required: true
-      regEmail:
-        label: "Email:"
-        placeholder: "Enter your email"
-        required: true
-  details:
-    title: "Enter Your Details"
-    form:
-      name:
-        label: "Full Name:"
-        required: true
-      aadhar:
-        label: "Aadhar Number:"
-        required: true
-        maxlength: 14
-      voterid:
-        label: "Voter-ID Number:"
-        required: true
-        maxlength: 10
-  vote:
-    title: "CHOOSE YOUR PARTY"
-    parties:
-      - name: "Unity Front Party (UFP)"
-        logo: "../dev/img/r-logo.webp"
-        candidate: "RAJEEV M M"
-        candidate_image: "../dev/img/rajeev.jpg"
-      - name: "Progressive People's Alliance (PPA)"
-        logo: "../dev/img/z-logo.webp"
-        candidate: "ZABIULLA"
-        candidate_image: "../dev/img/zabi.jpg"
-      - name: "Green Future Movement (GFM)"
-        logo: "../dev/img/s-logo.webp"
-        candidate: "SUBRAMANI B G"
-        candidate_image: "../dev/img/mani.jpg"
-  results:
-    title: "Voting Results"
-    content: "Votes will be displayed here."
-  thankYou:
-    title: "Thank You for Voting!"
-    message: "You voted for:"
-    redirect_timer: 5
+project:
+  name: "Online Voting System"
+  description: "A web-based application designed to facilitate secure and efficient online voting."
+  version: "1.0.0"
+  author: "Your Name"
+  license: "MIT"
+
+dependencies:
+  frontend:
+    - "HTML5"
+    - "CSS3"
+    - "JavaScript"
+
+repository:
+  type: "git"
+  url: "https://github.com/your-username/online-voting-system.git"
+
+setup:
+  prerequisites:
+    - "A modern web browser (e.g., Chrome, Firefox, Edge)"
+  steps:
+    - "Clone the repository: git clone https://github.com/your-username/online-voting-system.git"
+    - "Navigate to the project folder: cd online-voting-system"
+    - "Open the project: Open index.html in your browser."
+
+usage:
+  - "Open the application in your browser."
+  - "Log in using your credentials."
+  - "Enter your voter details (name, Aadhar number, Voter-ID)."
+  - "Cast your vote for your preferred party/candidate."
+  - "View the real-time voting results."
+
+project_structure:
+  - "index.html"
+  - "styles.css"
+  - "script.js"
+  - "img/"
+    - "r-logo.webp"
+    - "rajeev.jpg"
+    - "z-logo.webp"
+    - "zabi.jpg"
+    - "s-logo.webp"
+    - "mani.jpg"
+  - "README.md"
+
+contributing:
+  - "Fork the repository."
+  - "Create a new branch for your feature or bugfix."
+  - "Commit your changes."
+  - "Push your branch to your fork."
+  - "Submit a pull request."
+
+license: "MIT"
